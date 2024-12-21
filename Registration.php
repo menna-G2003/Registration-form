@@ -65,14 +65,14 @@
 </head>
 
 <body>
-  <h2> Registration Form </h2>
-  <br>
   <!-- Receives errors that I have reviewed from the back-end -->
   <?php
   if (isset($_GET['errors']))
     $errors = json_decode($_GET['errors'], true); // conversion data from array to string
   ?>
   <form action="done.php" method="post">
+     <h2> Registration Form </h2>
+  <br>
     <label for="first_name "> first name </label>
     <input type="text" id="first_name" name="first_name">
     <br>
